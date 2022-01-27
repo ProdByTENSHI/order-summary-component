@@ -4,12 +4,14 @@ $Primary-BG-White: hsl(225, 100%, 94%);
 $Primary-BG-Color: hsl(245, 75%, 52%);
 
 $Very-Pale-Blue: hsl(225, 100%, 98%);
-$Desaturated-Blue: hsl(224, 23%, 55%);
-$Dark-Blue: hsl(223, 47%, 23%);
+$Paragraph: hsl(224, 23%, 55%);
+$Headline: hsl(223, 47%, 23%);
 
 $fw-light: 500;
 $fw-semi-bold: 700;
 $fw-bold: 900;
+
+$border-rad: 20px;
 
 *,
 *::before,
@@ -21,16 +23,72 @@ $fw-bold: 900;
 }
 
 body {
+  height: 100vh;
+
   background: url('/res/pattern-background-desktop.svg') no-repeat;
   background-size: 100%;
   background-color: $Primary-BG-White;
 
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Outfit', sans-serif;
 }
 
-main {
+.order-card {
+  width: 30%;
+  height: 75vh;
+
+  background: #fff;
+  border-radius: $border-rad;
+
+  box-shadow: 10px 0px 50px rgba(114, 128, 167, 0.5);
+
+  .order-card-top-img {
+    width: 100%;
+    border-radius: $border-rad $border-rad 0px 0px;
+  }
+}
+
+.order-card-content {
+  text-align: center;
+  padding: 5% 10%;
+
+  h1 {
+    margin: 2.5% 0;
+    font-size: 1.5rem;
+    font-weight: $fw-bold;
+    color: $Headline;
+  }
+
+  p {
+    margin: 2.5% 0%;
+    font-weight: $fw-light;
+    color: $Paragraph;
+  }
+}
+
+.payment-plan {
   display: flex;
-  justify-content: center;
+
+  margin: 5% 0%;
+  padding: 3.5%;
+
+  background: $Very-Pale-Blue;
+  border-radius: $border-rad;
+
+  .price {
+    margin: 0% 5%;
+  }
+
+  img {
+    background: $Primary-BG-White;
+    border-radius: 100px;
+  }
+
+  a {
+  }
 }
 
 /* MOBILE */
