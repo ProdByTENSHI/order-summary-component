@@ -77,12 +77,17 @@ body {
 .cta-button {
   width: 90%;
   height: 5vh;
-  margin: 2.5%;
+  margin: 1.5%;
   border: none;
   border-radius: 15px;
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.025);
 }
 
 .cta-button.primary {
@@ -108,6 +113,22 @@ body {
 @media screen and (max-width: 500px) {
   body {
     background: url("/res/pattern-background-mobile.svg") no-repeat;
+  }
+
+  .order-card {
+    width: 90vw;
+  }
+  .order-card h1 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background: url("/res/pattern-background-desktop.svg") no-repeat;
+  }
+
+  .order-card {
+    width: 75vw;
   }
 }
 
