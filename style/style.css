@@ -58,6 +58,10 @@ body {
 }
 .payment-plan .price {
   margin: 0% 5%;
+  text-align: left;
+}
+.payment-plan .price h2 {
+  margin-bottom: 5%;
 }
 .payment-plan img {
   background: #e0e8ff;
