@@ -23,12 +23,12 @@ body {
   width: 30%;
   height: 75vh;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 10px 0px 50px rgba(114, 128, 167, 0.5);
 }
 .order-card .order-card-top-img {
   width: 100%;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .order-card-content {
@@ -52,7 +52,7 @@ body {
   margin: 5% 0%;
   padding: 3.5%;
   background: #f5f7ff;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .payment-plan .price {
   margin: 0% 5%;
@@ -61,6 +61,32 @@ body {
   background: #e0e8ff;
   border-radius: 100px;
 }
+.payment-plan a {
+  margin-left: auto;
+  align-self: center;
+}
+
+.cta-button {
+  width: 90%;
+  height: 5vh;
+  margin: 2.5%;
+  border: none;
+  border-radius: 15px;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.cta-button.primary {
+  background: #3829e0;
+  color: #fff;
+  box-shadow: 0px 5px 10px rgba(56, 41, 224, 0.5);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: #7280a7;
+}
+
 /* MOBILE */
 @media screen and (max-width: 500px) {
   body {

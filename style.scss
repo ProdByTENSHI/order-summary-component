@@ -11,7 +11,7 @@ $fw-light: 500;
 $fw-semi-bold: 700;
 $fw-bold: 900;
 
-$border-rad: 20px;
+$border-rad: 15px;
 
 *,
 *::before,
@@ -88,7 +88,30 @@ body {
   }
 
   a {
+    margin-left: auto;
+    align-self: center;
   }
+}
+
+.cta-button {
+  width: 90%;
+  height: 5vh;
+  margin: 2.5%;
+  border: none;
+  border-radius: $border-rad;
+  font-family: inherit;
+  font-weight: $fw-semi-bold;
+}
+
+.cta-button.primary {
+  background: $Primary-BG-Color;
+  color: #fff;
+  box-shadow: 0px 5px 10px rgba(56, 41, 224, 0.5);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: $Paragraph;
 }
 
 /* MOBILE */
