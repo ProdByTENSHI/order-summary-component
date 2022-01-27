@@ -33,16 +33,18 @@ body {
 
 .order-card-content {
   text-align: center;
-  padding: 5% 10%;
+  padding: 2.5% 10%;
 }
 .order-card-content h1 {
-  margin: 2.5% 0;
-  font-size: 1.5rem;
+  margin: 3% 0;
+  font-size: 2rem;
   font-weight: 900;
   color: #1f2f56;
 }
 .order-card-content p {
-  margin: 2.5% 0%;
+  width: 75%;
+  display: inline-block;
+  margin: 2% auto;
   font-weight: 500;
   color: #7280a7;
 }
@@ -62,8 +64,14 @@ body {
   border-radius: 100px;
 }
 .payment-plan a {
+  color: #3829e0;
+  font-weight: 700;
   margin-left: auto;
   align-self: center;
+}
+.payment-plan a:hover {
+  text-decoration: none;
+  color: #574ebc;
 }
 
 .cta-button {
@@ -74,6 +82,7 @@ body {
   border-radius: 15px;
   font-family: inherit;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .cta-button.primary {
@@ -82,9 +91,17 @@ body {
   box-shadow: 0px 5px 10px rgba(56, 41, 224, 0.5);
 }
 
+.cta-button.primary:hover {
+  background: #574ebc;
+}
+
 .cta-button.secondary {
   background: transparent;
   color: #7280a7;
+}
+
+.cta-button.secondary:hover {
+  color: #383f52;
 }
 
 /* MOBILE */
