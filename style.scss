@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$Primary-BG-White: hsl(225, 100%, 94%);
+$Primary-BG-Color: hsl(245, 75%, 52%);
+
+$Very-Pale-Blue: hsl(225, 100%, 98%);
+$Desaturated-Blue: hsl(224, 23%, 55%);
+$Dark-Blue: hsl(223, 47%, 23%);
+
+$fw-light: 500;
+$fw-semi-bold: 700;
+$fw-bold: 900;
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+}
+
+body {
+  background: url('/res/pattern-background-desktop.svg') no-repeat;
+  background-size: 100%;
+  background-color: $Primary-BG-White;
+
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* MOBILE */
+@media screen and(max-width: 500px) {
+  body {
+    background: url('/res/pattern-background-mobile.svg') no-repeat;
+  }
 }
